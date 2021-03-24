@@ -36,6 +36,8 @@ ul {
 body {
     font-family: 'RobotoCondensed', Sans-Serif;
     font-size: 16px;
+    line-height: 19px;
+    color: #1B1818;    
 }
 
 .container {
@@ -86,6 +88,10 @@ body {
 }
 
 /* Intro */
+.intro {
+    margin-bottom: 100px;
+}
+
 .intro__top {
     display: flex;
     padding-top: 50px;
@@ -98,6 +104,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 90px 0 75px;   
+    align-items: center;
 }
 
 .intro__title {
@@ -117,14 +124,14 @@ body {
 
 /* applink button */
 .applink {
+    display: block;
     background-color: #C5AC2D;
     color: #FEFEFE;
     font-size: 16px;
     line-height: 19px; 
     text-transform: uppercase;   
     padding: 16px;
-    width: 200px;
-    margin: 0 auto;    
+    width: 200px;   
     border: 1px solid transparent;
     transition: all .3s linear;
 }
@@ -241,4 +248,74 @@ body {
 
 .intro__link:hover {
     border-bottom: 1px solid transparent;
+}
+
+/* rent */
+.rent {
+    margin: 100px 0;
+}
+
+.rent__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent__terms {
+    max-width: 296px;
+    min-height: 350px;
+}
+
+/* rent__terms */
+.rent__title {
+    font-family: 'FiraSans';
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+.rent__text {
+    font-family: 'RobotoCondensed';
+    font-size: 16px;
+    line-height: 19px;    
+    margin-bottom: 20px;
+}
+
+.rent__text:last-of-type {
+    margin-bottom: 40px;
+}
+
+/* rent__item */
+.rent__item {
+    width: 250px;
+    min-height: 350px;
+    padding: 0 35px 20px;
+    border: 1px solid #332208;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rent__item-num {
+    font-family: 'FiraSans';
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+    opacity: 0.05;    
+}
+
+.rent__item-title {
+    font-family: 'FiraSans';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;  
+}
+
+.rent__item-text {
+    font-family: 'RobotoCondensed';
+    font-size: 16px;
+    text-align: center;
+    color: #1B1818; 
+    max-width: 172px;
+    margin: 0 auto;   
 }
